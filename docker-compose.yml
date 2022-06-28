@@ -1,0 +1,8 @@
+# To get started, run `docker-compose up [--build]`
+
+services: 
+  nightscout-reporter:
+    ports:
+      - "8080:80"
+    build: .
+    
