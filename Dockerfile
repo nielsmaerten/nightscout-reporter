@@ -39,7 +39,7 @@ COPY --from=unrar /app/pdfmake /var/www/html/pdfmake
 ARG PORT=80
 ENV PORT=${PORT}
 EXPOSE $PORT
-RUN sed -i 's/Listen 80/Listen ${PORT}/g' /etc/apache2/ports.conf
+RUN sed -i "s/Listen 80/Listen $PORT/g" /etc/apache2/ports.conf
 
 # Launch webserver
 CMD ["apache2-foreground"]

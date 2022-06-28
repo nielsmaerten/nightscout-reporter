@@ -37,3 +37,16 @@ Initial steps to compile, deploy, and run nightscout reporter on your own infras
 * Copy content of .\build to the content folder of your web server (or any subfolder)
 
 You can run your own nightscout-reporter instance by calling the URL of your web-server in a browser.
+
+## Alternative deployment options
+### Docker
+Run `docker-compose up` in the root of the repository, then open http://localhost:8080 in your browser.
+
+### Heroku (work in progress)
+**Note:** this does not work (yet) because of a [bug](https://github.com/docker-library/wordpress/issues/293) in Heroku  
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
+### Google Cloud Run ([demo](https://nightscout-reporter-p6ne35ru7q-uc.a.run.app/))
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
