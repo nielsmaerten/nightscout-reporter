@@ -1,3 +1,5 @@
 build:
+  config:
+    HEROKU_WORKAROUND: true
   docker:
     web: Dockerfile

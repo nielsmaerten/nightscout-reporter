@@ -41,5 +41,11 @@ ENV PORT=${PORT}
 EXPOSE $PORT
 RUN sed -i "s/Listen 80/Listen $PORT/g" /etc/apache2/ports.conf
 
+# Workaround for Heroku: disable prefork mpm
+ENV HEROKU_WORKAROUND=false
+RUN if [ "$HEROKU_WORKAROUND" = "true" ]; then \
+    a2dismod mpm_prefork; \
+    fi;
+
 # Launch webserver
 CMD ["apache2-foreground"]
