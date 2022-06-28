@@ -1,0 +1,6 @@
+{
+    "name": "Nightscout Reporter",
+    "description": "A web app to create PDF documents from Nightscout data",
+    "repository": "https://github.com/zreptil/nightscout-reporter",
+    "stack": "container"
+}
