@@ -1,5 +1,15 @@
 # Nightscout Reporter
 
+## 🌿 Fork info
+This is a fork of https://github.com/zreptil/nightscout-reporter.  
+It augments the existing project with a Dockerfile so you can spin up your own instance of Nightscout Reporter.  
+No need to install & configure dependencies.  
+
+Or, just click the big "Run on Google Cloud" button below, and it'll deploy your own private Nightscout Reporter to Google Cloud Run.  
+If you're not running anything else on GCP, it should comfortably fit within Google's free tier.
+
+---
+
 A web app based on AngularDart to create PDF documents from nightscout data.
 
 It uses the api from cgm-remote-monitor to access the nightscout data and 
@@ -42,11 +52,5 @@ You can run your own nightscout-reporter instance by calling the URL of your web
 ### Docker
 Run `docker-compose up` in the root of the repository, then open http://localhost:8080 in your browser.
 
-### Heroku (work in progress)
-**Note:** this does not work (yet) because of a [bug](https://github.com/docker-library/wordpress/issues/293) in Heroku  
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-
-### Google Cloud Run ([demo](https://nightscout-reporter-p6ne35ru7q-uc.a.run.app/))
+### Google Cloud Run
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
